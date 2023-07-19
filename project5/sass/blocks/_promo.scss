@@ -1,0 +1,172 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(5, 5, 5, 0.85);       
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+    
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 28px;
+}
+
+.navbar__block {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+
+.navbar__block:hover a{
+    color: #575757;
+}
+
+.navbar__item:hover a:hover {
+    color:#FFF;
+    
+}
+
+.navbar__item {
+    position: relative;
+    a {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.25s ease;
+    }
+    &:hover{
+        color:$main-color;
+        transition: 0.4s all ease;
+        
+    }
+    &::after
+		{content: '';
+		position: absolute;
+		width: 100%;
+		transform: scale(0);
+		height: 2px;
+		bottom: 4px;
+		left: 0 ;
+		background-color: $main-color;
+		transform-origin: bottom right;
+		transition: transform 0.5s ease-out;}
+}
+
+.navbar__item:hover::after{
+	
+	transform: scale(1);
+	transform-origin: bottom left;
+}
+
+.nav__contact {
+    display: flex;
+    justify-content: end;
+    gap: 50px   ;
+    text-align: center;
+    height: 36px;
+    
+   
+}
+
+.nav__phone {
+    a {
+        margin-left: 10px;
+        color: #fff;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+            }
+}
+
+.nav__email {
+    color: #fff;
+    padding-top: 5px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    span { 
+        margin-left: 10px;
+    }
+}
+
+.promo__slide-item {
+    position: relative;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: 725px;
+    }
+    
+}
+
+.promo__slide-text {
+    position: absolute;
+    top: 145px;
+    width: 424px;
+    left: 50%;
+    
+    
+}
+
+.promo__slide-title {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.promo__slide-descr {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    
+
+}
+
+.promo__slide-text-back {
+    position: absolute;
+    top: 145px;
+    width: 424px;
+    margin-left: 200px;
+    
+    
+    
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    background:none;
+    border: none;
+    
+    z-index: 2;
+    left: 20%;
+    img {
+        transform: rotate(180deg);
+        
+        
+    }
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    background:none;
+    border: none;
+    
+    
+}

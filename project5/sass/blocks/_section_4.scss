@@ -1,0 +1,106 @@
+.section__4 {
+    margin-top: 100px;
+    background-image: url(../../img/background/wydzialy1.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.section__4-card-item {
+    position: relative;
+    width: 595px;
+    height: 326px;
+    z-index: 1;
+    
+    
+    
+    
+    
+}
+
+
+
+.section__4-card-wraper {
+    width: 100%;
+    height: 30%;
+    z-index: 2;
+    background: rgba(252, 3, 3, 0.60);
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    
+    
+    
+    
+}
+
+.section__4-card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.section__4-card-item-title {
+    color: #fff;
+}
+
+.section__4-card-item-descr {
+    color: #fff;
+    margin-top: 30px;
+    position: absolute;
+    top: 50px;
+    margin-left: 30px;
+    opacity: 0;
+    z-index: 3;
+    width: 410px;
+    
+
+    
+}
+
+.section__4-card-btn {
+    position: absolute;
+    bottom: 33px;
+    right: 33px;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section__4-card-item:hover .section__4-card-wraper {
+    height: 100%;
+    bottom: 0;
+    transition: all .4s linear;
+    
+    
+}
+
+.section__4-card-item:hover .section__4-card-item-descr {
+    opacity: 1;
+    transition: all 1.3s;
+
+}
+
+.section__4-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto auto auto auto auto auto;
+    gap: 50px;
+}
+
+.section__4-title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    
+}
+
+
+.section__4-btn {
+    display: block;
+    margin: 0 auto;
+}

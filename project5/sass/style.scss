@@ -1,0 +1,39 @@
+@import 'libs/bootstrap-reboot.min';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap');
+
+
+
+.container {
+    max-width: 1290px ;
+    margin: 0 auto;
+}
+
+
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import 'libs/slick.css';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/title';
+@import 'blocks/btn';
+@import 'blocks/promo';
+@import 'blocks/section_2';
+@import 'blocks/section_3';
+@import 'blocks/section_4';
+
+@import 'blocks/media';
+
+
+// .container{
+//     max-width: 1367px ;
+//     margin: 0 auto;
+// }
+
